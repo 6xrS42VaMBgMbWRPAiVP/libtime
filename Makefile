@@ -220,8 +220,8 @@ build-npm:
 	#   build-man
 	cp \
 	  -r \
+	  "ethereum-time" \
 	  $(_NPM_FILES) \
-	  "lib$(_PROJECT_NPM)" \
 	  "$(_PROJECT_NPM)" \
 	  "build"; \
 	cd \
