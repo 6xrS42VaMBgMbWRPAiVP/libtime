@@ -1,9 +1,0 @@
-[submodule "contracts"]
-	path = contracts
-	url = https://github.com/themartiancompany/evmfs-contracts
-[submodule "data"]
-	path = data
-	url = github:themartiancompany/evmfs-data
-[submodule "man"]
-	path = man
-	url = https://github.com/themartiancompany/evmfs-man

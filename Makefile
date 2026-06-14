@@ -216,8 +216,8 @@ build-man:
 
 build-npm:
 
-	make \
-	  build-man
+	# make \
+	#   build-man
 	cp \
 	  -r \
 	  $(_NPM_FILES) \
