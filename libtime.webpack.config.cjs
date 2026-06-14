@@ -1,5 +1,5 @@
 /**    ----------------------------------------------------------------
- *     libevmfs.webpack.config.cjs
+ *     libtime.webpack.config.cjs
  *     ----------------------------------------------------------------
  *     Copyright ©
  *       Pellegrino Prevete
@@ -33,7 +33,7 @@ const
       __dirname);
 const
   _input_file_name =
-    `libevmfs`;
+    `libtime`;
 const
   _input_file_path =
     `./${_input_file_name}`;

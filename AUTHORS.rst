@@ -22,7 +22,7 @@
 
 
 ============================================
-evmfs.js Authors
+Ethereum Time Library Authors
 ============================================
 
 * Pellegrino Prevete <pellegrinoprevete@gmail.com>

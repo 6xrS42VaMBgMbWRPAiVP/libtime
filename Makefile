@@ -22,8 +22,8 @@
 SHELL=bash
 PREFIX ?= /usr/local
 SOLIDITY_COMPILER_BACKEND ?= solc
-_PROJECT_NPM=evmfs
-_PROJECT=$(_PROJECT_NPM).js
+_PROJECT_NPM=libtime
+_PROJECT=$(_PROJECT_NPM)
 DOC_DIR=$(DESTDIR)$(PREFIX)/share/doc/$(_PROJECT)
 BIN_DIR=$(DESTDIR)$(PREFIX)/bin
 LIB_DIR=$(DESTDIR)$(PREFIX)/lib/$(_PROJECT)
@@ -35,16 +35,7 @@ DOC_FILES=\
   $(wildcard *.rst) \
   $(wildcard docs/*.md)
 _NODE_FILES:=\
-  ccget \
-  check \
-  get \
-  index \
-  lengthlock \
-  libevmfs \
-  lock \
-  publish \
-  publish.bulk \
-  verify
+  time-get
 
 _NPM_FILES:=\
   AUTHORS.rst \

@@ -3,7 +3,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 /**    ----------------------------------------------------------------------
- *     evmfs.js.ccget
+ *     time-get
  *     ----------------------------------------------------------------------
  *     Copyright ©
  *       Pellegrino Prevete
@@ -74,7 +74,7 @@ _get =
 function
   _global_variables() {
   app_name =
-    "evmfs.js.ccget";
+    "time-get";
   retries_max =
     "";
   api_key_path =

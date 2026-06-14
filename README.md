@@ -24,93 +24,27 @@
 [comment]: <> (with this program.)
 [comment]: <> (If not, see <https://www.gnu.org/licenses/>.)
 
-# Ethereum Virtual Machine File System (EVMFS) Javascript reference implementation (`evmfs.js`)
+# Ethereum Time Library (ETL) (`libtime`)
 
 [![NPM version](
-  https://img.shields.io/npm/last-update/evmfs)](
-    https://npmjs.org/package/evmfs)
+  https://img.shields.io/npm/last-update/libtime)](
+    https://npmjs.org/package/libtime)
 
-<div
-   align="center">
-  <img
-     src="https://raw.githubusercontent.com/themartiancompany/evmfs-data/2fb357f70c07ab25ef5c74b6558d23e63f8a26e2/evmfs.png"
-     width="500"
-     align="center"
-  />
-</div>
-
-
-Reference Javascript implementation of the Ethereum Virtual Machine File System (EVMFS).
+Reference Javascript implementation of the Ethereum Time Library (ETL).
 
 ### Quick overview
 
-The Ethereum Virtual Machine File System is a multi-level distributed,
-network-independent, cross-network, uncensorable, undeletable,
-permissionless file system running on Ethereum Virtual Machine-compatible networks.
+The Ethereum Time Library allows to get time from on-chain without
+using an off-chain time oracle and use it in as a variable in
+smart contracts.
 
-Links pointing to the file system resources are structured in the following way:
-
-```
-evmfs://<evm_network_id>/<evmfs_contract_address>/<user_namespace>/<file_hash>
-```
-
-Files can be published by running
-
-```bash
-evmfs.js \
-  publish \
-    [target_files]
-```
-
-and retrieved with
-
-```bash
-evmfs.js \
-  get \
-    <evmfs_uri>
-```
-
-Public file system's contracts' deployment addresses on
-selected blockchain networks can be found in the 
-`contracts/deployments` directory in the source
-tree and are configured into the program at install time.
-
-The file system currently has public deployments
-on around 4% of all Ethereum Virtual Machine
-compatible blockchains networks.
-
-Options for user-defined deployments are discussed in
-the documentation.
-
-Extra to the command-line utility, a standalone
-super simple Bash graphical interface using Zenity
-has been made available in the
-[evmfs-zenity](
-  https://github.com/themartiancompany/evmfs-zenity)
-repository.
-
-![evmfs-zenity](
-  https://github.com/themartiancompany/evmfs-zenity/blob/master/media/evmfs-get-zenity.jpg)
-
-For the reference Bash implementation,
-including this one on-demand
-you can consult the censorable
-main HTTP mirror on
-[`themartiancompany/evmfs`](
-  http://github.com/themartiancompany/evmfs).
-
-
-The EVMFS is a core component of the
+The Ethereum Time Library is a core component of the
 [Human Instrumentality Project](
-  http://www.humaninstrumentalityproject.org)
-and of the
-[Ur](
-  https://github.com/themartiancompany/ur)
-application store for Life and DogeOS.
+  http://www.humaninstrumentalityproject.org).
 
 ### Installation
 
-Evmfs has been officially published on the
+The Ethereum Time Library has been officially published on the
 [Ur](
   https://github.com/themartiancompany/ur),
 the uncensorable, distributed, permissionless
@@ -118,10 +52,10 @@ Life and DogeOS user repository and application store,
 so it can be seamlessly installed by typing
 
 ```bash
-ur evmfs
+ur libtime
 ```
 
-Since the EVMFS is actually an Ur dependency, if
+Since the ETL is actually an Ur dependency, if
 you're coming from a system not integrating
 or packaging the Ur, you may want to install
 a binary build from the
@@ -139,7 +73,7 @@ The project can be built and installed with GNU make.
 
 ```
 cd \
-  evmfs
+  libtime
 make
 make \
   install
@@ -152,7 +86,7 @@ user repository and application store universal recipe,
 hosted on the file system itself.
 An HTTP mirror is provided on The Martian Company's
 [Github](
-  https://github.com/themartiancompany/evmfs-ur).
+  https://github.com/themartiancompany/libtime-ur).
 
 ### Documentation
 
@@ -160,14 +94,14 @@ Upon installation, manual can be consulted by typing:
 
 ```bash
   man \
-    evmfs
+    libtime
 ```
 
 Notes and other documentation are in the
 [`docs`](
   docs)
 source tree directory and installed onto the
-`<data_dir>/doc/evmfs` directory.
+`<data_dir>/doc/libtime` directory.
 
 You can consult the manual from an online mirror of this
 repository. The `rst` source files are located in the `man`
@@ -175,5 +109,5 @@ directory.
 
 ## License
 
-The Ethereum Virtual File System is released under the terms of the
+The Ethereum Time Library is released under the terms of the
 GNU Affero General Public License Version 3.

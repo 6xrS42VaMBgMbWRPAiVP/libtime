@@ -29,7 +29,7 @@ import { defineConfig } from "eslint/config";
 
 const
   _project =
-    "evmfs";
+    "libtime";
 
 export default defineConfig([
  {

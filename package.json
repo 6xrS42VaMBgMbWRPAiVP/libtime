@@ -1,10 +1,10 @@
 {
   "name":
-    "evmfs",
+    "libtime",
   "version":
     "0.0.7",
   "description":
-    "Multi-level distributed, network-independent, cross-network, uncensorable, undeletable, permissionless file system running on Ethereum Virtual Machine-compatible networks.",
+    "Ethereum Time Library (ETL).",
   "funding":
     { "type":
         "patreon",
@@ -15,69 +15,47 @@
     "AUTHORS.rst",
     "COPYING",
     "README.md",
-    "evmfs",
+    "ethereum-time",
     "contracts",
     "eslint.config.mjs",
     "man",
     "lib",
-    "libevmfs",
-    "libevmfs.webpack.config.cjs",
+    "libtime",
+    "libtime.webpack.config.cjs",
     "package.json",
     "webpack.config.cjs"
   ],
   "man": [
-    "./man/evmfs.js.ccget.1",
-    "./man/evmfs.js.check.1",
-    "./man/evmfs.js.get.1",
-    "./man/evmfs.js.index.1",
-    "./man/evmfs.js.lengthlock.1",
-    "./man/evmfs.js.lock.1",
-    "./man/evmfs.js.publish.1",
-    "./man/evmfs.js.publish.bulk.1",
-    "./man/evmfs.js.verify.1"
   ],
   "bin":
-    { "evmfs.js.ccget":
-        "evmfs/evmfs.js.ccget",
-      "evmfs.js.check":
-        "evmfs/evmfs.js.check",
-      "evmfs.js.get":
-        "evmfs/evmfs.js.get",
-      "evmfs.js.index":
-        "evmfs/evmfs.js.index",
-      "evmfs.js.lengthlock":
-        "evmfs/evmfs.js.lengthlock",
-      "evmfs.js.lock":
-        "evmfs/evmfs.js.lock",
-      "evmfs.js.publish":
-        "evmfs/evmfs.js.publish",
-      "evmfs.js.publish.bulk":
-        "evmfs/evmfs.js.publish.bulk",
-      "evmfs.js.verify":
-        "evmfs/evmfs.js.verify"
+    { "etime":
+        "ethereum-time",
+      "ethereum-time":
+        "ethereum-time"
     },
   "keywords": [
     "crash-bash",
     "dogeos",
-    "opfs",
     "evmfs",
-    "fs",
+    "ethereum",
+    "ethereum-time",
     "hip",
     "libevm",
     "themartiancompany",
+    "time",
     "ur"
   ],
   "homepage":
-    "https://github.com/themartiancompany/evmfs",
+    "https://github.com/themartiancompany/libtime",
   "bugs": {
     "url":
-      "https://github.com/themartiancompany/evmfs/issues"
+      "https://github.com/themartiancompany/libtime/issues"
   },
   "repository": {
     "type":
       "git",
     "url":
-      "git+https://github.com/themartiancompany/evmfs.js.git"
+      "git+https://github.com/themartiancompany/libtime.git"
   },
   "license":
     "AGPL-3.0-or-later",
@@ -112,27 +90,20 @@
       "0.0.1",
     "evm-wallet":
       "npm:evm-wallet.js@^0.0.3",
-    "evmfs-contracts":
-      "0.0.3",
     "yargs":
       "18.0.0"
   },
   "type":
     "commonjs",
   "main":
-    "libevmfs",
-  "bin": {
-    "evmfs":
-      "evmfs",
-    "evmfs.js":
-      "evmfs" },
+    "libtime",
   "scripts":
     { "build":
         "npm run lint && npm run build-lib && npm build-bin",
-      "build-lib":
-        "npx webpack --mode 'production' --config 'libevmfs.lwebpack.config.cjs' --stats-error-details && mv 'libevmfs.js' 'dist/libevmfs'",
-      "build-bin":
-        "npx webpack --mode 'production' --config 'webpack.config.cjs' --stats-error-details && mv 'evmfs.js' 'dist/evmfs'",
+    "build-bin":
+      "npx webpack --mode 'production' --config 'webpack.config.cjs' --stats-error-details && mv 'ethereum-time.js' 'dist/ethereum-time/ethereum-time.js'",
+    "build-lib":
+      "npx webpack --mode 'production' --config 'libtime.webpack.config.cjs' --stats-error-details && mv 'libtime.js' 'dist/libtime/libtime.js'",
       "lint":
         "npx eslint .",
       "start":

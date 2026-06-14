@@ -33,7 +33,7 @@ const
       __dirname);
 const
   _input_file_name =
-    `evmfs`;
+    `ethereum-time`;
 const
   _input_file_path =
     `./${_input_file_name}`;
